@@ -1,0 +1,114 @@
+.login-screen {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 60px 80px;
+    text-align: center;
+    min-width: 320px;
+}
+
+.logo-section {
+    margin-bottom: 50px;
+}
+
+.logo {
+    width: 80px;
+    height: 33px;
+    background-color: #e0e0e0;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+}
+
+.button-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.login-btn,
+.signup-btn,
+.guest-btn {
+    width: 100%;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-height: 48px;
+}
+
+.login-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+.signup-btn {
+    background-color: #6c757d;
+    color: white;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+.guest-btn {
+background-color: #6c757d;
+color: white;
+}
+
+.guest-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+.login-btn:active,
+.signup-btn:active,
+.guest-btn:active {
+    transform: translateY(0);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 40px 30px;
+        margin: 20px;
+        min-width: 280px;
+    }
+
+    .logo {
+        width: 70px;
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .login-btn,
+    .signup-btn,
+    .guest-btn {
+        padding: 12px 16px;
+        font-size: 15px;
+        min-height: 44px;
+    }
+} 
